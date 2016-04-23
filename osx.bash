@@ -15,3 +15,5 @@ selected() {
 EOT)
 echo $selected | tr ":" "\n"
 }
+# echo $(plus1 8)
+export -f selected
