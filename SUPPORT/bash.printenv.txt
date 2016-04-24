@@ -1,0 +1,37 @@
+TERM_PROGRAM=Apple_Terminal
+SHELL=/bin/bash
+TERM=xterm-256color
+TMPDIR=/var/folders/83/pqhxbkvd4nx4jqgbq5g30dyr0000gn/T/
+Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.WYI5TJBAXc/Render
+TERM_PROGRAM_VERSION=361.1
+TERM_SESSION_ID=7C9A5CCD-F5C3-4D78-B812-C12471C32C6C
+DIR_sites=/Users/robertstarbuck/Sites
+USER=robertstarbuck
+DIR_dotfiles=/Users/robertstarbuck/dotfiles
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.aIsIeMRIKV/Listeners
+__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0
+PATH=/Library/Frameworks/Python.framework/Versions/3.5/bin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Library/TeX/texbin
+PWD=/Users/robertstarbuck/dotfiles/osx
+LANG=en_GB.UTF-8
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=0
+SHLVL=1
+HOME=/Users/robertstarbuck
+LOGNAME=robertstarbuck
+BASH_FUNC_selected%%=() {  selected=$(osascript <<EOT
+        tell application "Finder"
+            set theFiles to selection
+            set myList to {}
+            repeat with aFile in theFiles
+                copy POSIX path of (aFile as alias) to end of myList
+            end repeat
+            # Do not know how to escape a single quote in a heredoc, as a result the line beneath is a requirement
+            set Applescript's text item delimiters to "DUMMY"
+            set AppleScript's text item delimiters to ":"
+            myList as string
+        end tell
+EOT);
+ echo $selected | tr ":" "\n"
+}
+OLDPWD=/Users/robertstarbuck/dotfiles
+_=/usr/bin/printenv

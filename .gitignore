@@ -1,4 +1,5 @@
 _legacy
 *.app
+*.sublime-*
 ignore/*
 !ignore/README.md
