@@ -1,2 +1,3 @@
-personal/*
-!personal/README.md
+_legacy
+ignore/*
+!ignore/README.md
