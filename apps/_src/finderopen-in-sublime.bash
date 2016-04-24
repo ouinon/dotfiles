@@ -9,6 +9,6 @@ finder_path () {
         -e 'end tell';
 }
 selected() {
-    /usr/local/bin/sb $(finder_path)
+    /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $(finder_path)
 }
 selected
