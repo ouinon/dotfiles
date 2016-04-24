@@ -1,3 +1,4 @@
 _legacy
+*.app
 ignore/*
 !ignore/README.md

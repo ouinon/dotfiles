@@ -1,0 +1,11 @@
+for f in $(find $HOME/dotfiles -path "*_fnc*" -name "*.bash");
+do
+	echo Function: $f
+	source $f
+done
+
+for f in $(find $HOME/dotfiles -name "*.bash" -not -path "*/_*");
+do
+	echo File: $f
+	source $f
+done

@@ -1,4 +1,4 @@
-# CITE:https://github.com/herrbischoff/awesome-osx-command-line/blob/master/functions.md#get-path-of-frontmost-finder-window
+#!/bin/bash
 selected() {
     selected=$(osascript <<EOT
         tell application "Finder"
