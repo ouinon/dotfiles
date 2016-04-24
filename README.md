@@ -2,21 +2,10 @@
 
 Copy the following into your `.bash_profile`, I make no apologies for doing this manually.
 
-    # Where you do your development
-    export DIR_WWW=$HOME/Sites
+    export DIR_DOTFILES=$HOME/dotfiles
+    source $DIR_DOTFILES/.dotfiles
 
-    # Where you do your development
-    export DIR_DOTFILES=$HOME/dotfiles    
-
-    # source function dependencies first
-    source $(find $HOME/dotfiles -path "*/_fnc/*")
-    # source all other files that aren't private (_*)
-    source $(find $HOME/dotfiles -name "*.bash" -not -path "*/_*")
-
-    # 'sb' should point to the sublime binary somewhere in your $PATH
-    export EDITOR='sb -w'
-
-This will [source](http://ss64.com/bash/source.html) all `.bash` files in the dotfiles directory and sub-directories except those beginning with an underscore ("_") (including the _bak directory). This allows for a descriptive directory structure.
+This sourced filed in-turn [source](http://ss64.com/bash/source.html) all `.bash` files in the dotfiles directory and sub-directories except those beginning with an underscore ("_"). This allows for a descriptive directory structure.
 
 The dotfiles are intended for use in OSX though most will work on Linux.
 
