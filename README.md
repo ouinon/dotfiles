@@ -1,8 +1,20 @@
 # Installation
 
-To install these dot files, clone the repo include the following line in your `.bash_profile` file.
+Copy the following into your `.bash_profile`, I make no apologies for doing this manually.
 
-    source $(find ./dotfiles -name "*.bash" -not -path "*/_*")
+    # Where you do your development
+    export DIR_WWW=$HOME/Sites
+
+    # Where you do your development
+    export DIR_DOTFILES=$HOME/dotfiles    
+
+    # source function dependencies first
+    source $(find $HOME/dotfiles -path "*/_fnc/*")
+    # source all other files that aren't private (_*)
+    source $(find $HOME/dotfiles -name "*.bash" -not -path "*/_*")
+
+    # 'sb' should point to the sublime binary somewhere in your $PATH
+    export EDITOR='sb -w'
 
 This will [source](http://ss64.com/bash/source.html) all `.bash` files in the dotfiles directory and sub-directories except those beginning with an underscore ("_") (including the _bak directory). This allows for a descriptive directory structure.
 
