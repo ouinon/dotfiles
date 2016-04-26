@@ -21,4 +21,4 @@ https://github.com/huyng/bashmarks
 
 ### Appify
 
-[Mathias Bynens](https://gist.github.com/mathiasbynens) appify script turns bash files into __.app__ files
+[Mathias Bynens](https://gist.github.com/mathiasbynens) - [appify](https://gist.github.com/mathiasbynens/674099) script turns bash files into __.app__ files
