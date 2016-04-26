@@ -1,11 +1,11 @@
 #!/bin/bash
 sb_fn() {
-	local args
+	local args="--command=newWindow"
 	local fname=$1
 	
 	if [[ -z $fname ]]
 	then
-		args='--command=new'
+		args="$args --command=new"
 	fi
 
 	path="$(finder_path)$fname"
