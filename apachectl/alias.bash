@@ -1,0 +1,1 @@
+alias a2.info='apachectl -V'
