@@ -1,5 +1,5 @@
 _legacy
 *.app
 *.sublime-*
-ignore/*
-!ignore/README.md
+local/*
+!local/README.md
