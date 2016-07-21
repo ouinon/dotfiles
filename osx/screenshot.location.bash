@@ -1,5 +1,5 @@
 #!/bin/bash
-ss.location(){	
+ss-location(){	
 	defaults write com.apple.screencapture location "${PWD}";killall SystemUIServer
 }
-export -f ss.location
+export -f ss-location

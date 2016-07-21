@@ -20,3 +20,8 @@ You can use this `if` to determine what to do with a call to an app program,  in
     else
     echo "bash" | pbcopy
     fi
+
+# Read a file into a string
+
+echo $(<test.html)
+echo "$(<test.html)"
