@@ -3,7 +3,8 @@ chromeurl() {
     url=$(osascript <<EOT
         tell application "Google Chrome" to return URL of active tab of front window
 EOT)
-echo $url
+# & requires escaping for the xml
+echo ${url/&/&amp;}
 }
 
 chrometitle() {
