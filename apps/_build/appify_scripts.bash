@@ -5,20 +5,28 @@ fi
 
 cd $DIR_DOTFILES/apps
 
-appslocation="$DIR_DOTFILES/apps";
-appstobuild=$(find "$appslocation/_src" -name "*.bash")
+appslocation="$DIR_DOTFILES";
+appstobuild=$(find "$appslocation" -path "*/app.*")
+
 
 for i in $appstobuild
 do
-	fName=${i##*/}
-	appName=${fName%.bash}
+	fileName=${i##*/}
+
+    appName=${fileName/app./} # Remove app. from the front
+    appName=${appName%.bash} # Remove .bash from the end
+    appName=${appName//./-} # Replace . with - 
     
-    appPath=$appslocation/${fName/.bash/.app}
+    appPath=$appslocation/$appName.app
+    echo $appPath $i
+    # echo $appPath
+
+
     # Remove the old apps 
     if [[ -d $appPath ]]
     then 
-    	echo $appPath;
-    	rm -rf $appPath;
+    	echo $appPath
+    	rm -rf $appPath
 	fi
 	# Bulid the app
     appify $i $appName

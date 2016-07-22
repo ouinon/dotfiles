@@ -19,20 +19,16 @@ If install __homebrew__ it's a good idea to change the path order in this file:
 
 ## Recommendations
 
-#### ColorTools
+#### [ColorTools](https://github.com/ramonpoca/ColorTools)
 
 [Ramon Poca](http://ramonpoca.github.io/) provides an invaluable means of creating color palettes for OSX.
 
-https://github.com/ramonpoca/ColorTools
-
-#### Bashmarks
+#### [Bashmarks](https://github.com/huyng/bashmarks)
 
 [Huy Nguyen's](http://www.huyng.com) bashmarks provide a simple means of navigating directories in bash. Best solution I've seen.
 
-https://github.com/huyng/bashmarks
+#### [Appify](https://gist.github.com/mathiasbynens/674099)
 
-#### Appify
+[Mathias Bynens](https://gist.github.com/mathiasbynens) - appify script turns bash files into __.app__ files
 
-[Mathias Bynens](https://gist.github.com/mathiasbynens) - [appify](https://gist.github.com/mathiasbynens/674099) script turns bash files into __.app__ files
-
-_Unless indicated, no dotfiles require the installation of the following. Some backups are included in "./_bak"_.
+_NB. Some backups are included in "./_bak"_.

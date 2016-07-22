@@ -4,7 +4,7 @@ do
 	source $f
 done
 
-for f in $(find $HOME/dotfiles -name "*.bash" -not -path "*/_*");
+for f in $(find $HOME/dotfiles -name "*.bash" -not -path "*/_*" -not -path "*/app.*");
 do
 	echo File: $f
 	source $f
