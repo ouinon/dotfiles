@@ -1,6 +1,7 @@
 # To-do
 
-- [ ] Tidy desktop function
+- [ ] Tidy desktop function @golang
+- [ ] Index Bookmarks (.weblocs) @golang
 - [ ] test launchd for processing
 - [ ] https://gist.github.com/defunkt/370230 https://github.com/delta24/gist (Include Gist)
 - [ ] Todoist Cli https://github.com/Yitsushi/doistcli
