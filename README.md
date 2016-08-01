@@ -2,8 +2,8 @@
 
 Copy the following into your `.bash_profile`, I make no apologies for doing this manually.
 
-    export DIR_DOTFILES=$HOME/dotfiles
-    source $DIR_DOTFILES/.dotfiles
+    export DOTFILES=$HOME/dotfiles
+    source $DOTFILES/.dotfiles
 
 This sourced filed in-turn [source](http://ss64.com/bash/source.html) all `.bash` files in the dotfiles directory and sub-directories except those beginning with an underscore ("_"). This allows for a descriptive directory structure.
 
