@@ -1,6 +1,7 @@
 # To-do
 
 - [ ] Tidy desktop function @golang
+    - [ ] Use BoltDB
 - [ ] Index Bookmarks (.weblocs) @golang
 - [ ] test launchd for processing
 - [ ] https://gist.github.com/defunkt/370230 https://github.com/delta24/gist (Include Gist)
