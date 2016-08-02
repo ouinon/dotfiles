@@ -1,6 +1,8 @@
 # To-do
 
-- [ ] Tidy desktop function
+- [ ] Tidy desktop function @golang
+    - [ ] Use BoltDB
+- [ ] Index Bookmarks (.weblocs) @golang
 - [ ] test launchd for processing
 - [ ] Alfred autocomplete for bashmarks @golang
 - [ ] Colour Picker 
