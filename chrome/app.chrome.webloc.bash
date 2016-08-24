@@ -11,6 +11,8 @@ chrometitle() {
     title=$(osascript <<EOT
         tell application "Google Chrome" to return title of active tab of front window
 EOT)
+	title=${title//[^[:ascii:]]/-}
+	title=${title//\//-}
 	echo $title
 }
 

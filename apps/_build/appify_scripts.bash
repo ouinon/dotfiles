@@ -3,9 +3,9 @@ then
 	echo 'appify is not installed'; exit
 fi
 
-cd $DIR_DOTFILES/apps
+cd $HOME/dotfiles/apps
 
-appslocation="$DIR_DOTFILES";
+appslocation="$HOME/dotfiles/";
 appstobuild=$(find "$appslocation" -path "*/app.*")
 
 
