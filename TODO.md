@@ -1,5 +1,6 @@
 # TODO
 
+- [ ] Golang Copy upto `.git`
 - [ ] [Implement Cocoa for Dictionaries](https://coderwall.com/p/l9jr5a/accessing-cocoa-objective-c-from-go-with-cgo)
 - [ ] Tidy desktop function @golang
     - [ ] Use BoltDB or just simply a json file
@@ -13,7 +14,7 @@
 
 # BUG
 
-- [ ] ss-location function is causing difficulties
+- [X] ss-location function is causing difficulties
 
 # ARCHIVE
 
